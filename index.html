@@ -13,6 +13,12 @@
 <body>
 
     <div class="container-fluid" style="background-color: palevioletred; min-height: 100vh;">
+
+
+        <div id="sis" class="alert alert-info" role="alert" style="visibility: hidden;">
+            Today is a Very Important Day!
+          </div>
+
         <div style="height: 15vh;"></div>
         <div style="text-align: center; padding-top: 5vh; border: inset purple;">
         <h1 style="font-size: 8vh;">Happy Birthday to the Best Sister in the World!</h1>
@@ -38,8 +44,14 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 <script>
-
-
+let today = new Date();
+console.log(today);
+let date = today.getDate();
+let month = today.getMonth();
+if(date == 27 || month == 6){
+    document.getElementById("sis").style.visibility = "visible";
+    console.log("Happy Birthday sis!");
+}
 
 </script>
 
